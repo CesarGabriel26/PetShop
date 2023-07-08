@@ -1,0 +1,69 @@
+button {
+    border: none;
+    background: transparent;
+    outline: none;
+
+    transition: .2s ease-in-out;
+}
+
+/*Donation*/
+
+.Donate {
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--Laranja);
+    color: var(--Cinza);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.Donate:hover {
+    background: var(--Cinza);
+    color: var(--Laranja);
+}
+
+/*Check box*/
+.Check {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+input.Donate {
+    height: 44px;
+    background: transparent;
+    border: .5px solid var(--Cinza);
+    text-transform: capitalize;
+}
+input.Donate:hover{background: transparent;color: var(--Cinza);}
+
+/*dropdown*/
+.dropdown {
+    display: inline-block;
+    position: relative;
+    z-index: 99;
+}
+
+.dropdown-content {
+    display: none;
+    width: max-content;
+    padding: 5px;
+    position: absolute;
+    text-align: initial;
+    background: var(--Qua);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Opicional para funcionar no mesmo estilo da navegação
+.dropdown:hover .NavOPC::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}*/
+
+.dropdown-content .dropdown-opc {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}

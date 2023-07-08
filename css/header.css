@@ -1,0 +1,77 @@
+footer,
+header {
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--branco);
+}
+
+.Logo {
+    height: 100px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SubHeader .NavOPC,
+header .NavOPC {
+    cursor: pointer;
+
+    margin: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-size: 18px;
+    color: var(--Textos);
+    position: relative;
+}
+
+.SubHeader .NavOPC::before,
+header .NavOPC::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+
+    height: 3px;
+    width: 100%;
+    background: var(--Seg);
+
+    transform: scaleX(0);
+
+    transform-origin: center;
+    transition: transform .2s ease-in-out;
+}
+
+.SubHeader .NavOPC:hover::before,
+header .NavOPC:hover::before {
+    transform: scaleX(1);
+}
+
+.SubHeader {
+    border-top: 1px solid var(--Seg);
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--Ter);
+}
+
+/*-------------------------------------------------------------*/
+footer {
+    border-top: 1px solid var(--Seg);
+    position: absolute;
+    bottom: 0;
+}

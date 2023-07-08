@@ -1,0 +1,45 @@
+main {
+    height: calc(100% - 200px);
+}
+
+.HelpCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20%;
+
+    padding: 20px;
+    text-align: center;
+}
+
+.Donation {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+}
+
+.Donation .conteudo {
+    background: var(--branco1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Quantidades {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.Botoes p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
